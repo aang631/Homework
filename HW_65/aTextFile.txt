@@ -1,0 +1,1 @@
+This is a text file. I want to see if I can get it to read backwards in node!
