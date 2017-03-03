@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#messages {
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 6px;
+  overflow: auto;
+  background: lightgoldenrodyellow;
+}
+
+#message {
+  width: 95%;
+}
+
+#chatView{
+  display:none;
+}
+
+.enter{
+  color:lightseagreen;
+  font-size:20px;
+  text-transform: uppercase;
+}
+
+.exit{
+  color:red;
+  font-size:20px;
+  text-transform: uppercase;
+}
