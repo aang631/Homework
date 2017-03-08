@@ -1,0 +1,35 @@
+1) use school
+
+2,3)  db.students.insert({first_name:"Donald",last_name:"Trump",address:"1600 Pennsylvania Ave",grade:5})
+
+	  db.students.insert({first_name:"Donald",last_name:"Duck",address:"999 Calistola Ave",grade:12})
+
+	  db.students.insert({first_name:"Melania",last_name:"Trump",address:"1600 Pennsylvania Ave",grade:1})
+
+	  db.students.insert({first_name:"Jeb",last_name:"Bush",address:"252 Coral Gables",grade:11})
+
+	  db.students.insert({first_name:"Hillary",last_name:"Clinton",address:"100 Alcatraz Island",grade:2})
+
+	____________________________________________OR__________________________________________________________
+
+2,3)  function insertStudent(first,last,address,grade){
+... db.students.insert({first_name:first , last_name:last , address:address, grade:grade})
+... }
+
+	 insertStudent("Donald","Trump","1600 Pennsylvania Ave",5)
+	 insertStudent("Donald","Duck","999 Calistola Ave",12)
+	 insertStudent("Melania","Trump","1600 Pennsylvania Ave",1)
+	 insertStudent("Jeb","Bush","252 Coral Gables",11)
+	 insertStudent("Hillary","Clinton","100 Alcatraz Island",2)
+	  
+4)	db.students.find({first_name:"Donald"})
+
+5)	db.students.find({first_name:"Donald",grade:5})
+
+6)	use store
+
+7,8) db.products.insert([{name:"cookies", price: 2.5},{name:"pretzels",price:1.75}])	
+
+9) db.products.find()
+
+10) db.products.remove({})
