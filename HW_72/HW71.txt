@@ -1,0 +1,40 @@
+HW 107 (SL 72)
+
+1)  db.students.update({_id: ObjectId("58bf62bd8f26837837102217")},{first_name:'Doofus', last_name:'Duck', address:'1 Duck Tower', grade:12})
+
+2)  db.students.update({grade:6},{$set:{grade:7}},{multi:true})
+
+3)  db.students.update({grade:5},{$inc:{grade:1}},{multi:true})
+
+4)  db.students.update({grade:7},{$set:{scores:[95,98,93]}},{multi: true})
+
+5)  db.students.update({grade:7},{$push:{scores:{$each:[85,86,87,88,89]}}},{multi: true})
+
+6)  db.students.update({grade:7}, {$pop: {scores: 1}},{multi: true})
+
+7)  db.students.update({grade:7}, {$pull: {scores: 85}}, {multi: true})
+
+8)  db.students.find({grade: {$gt: 7}})
+
+9)  db.students.find({grade: {$gt: 7}, name: 'Joe'})
+
+10) db.students.find({$or: [{grade: {$lt: 7}}, {name: 'Joe'}]})
+
+11) db.students.find({grade: {$ne: 7}})
+
+12) db.students.find({grade: {$in: [6, 7, 8]}})
+
+13) db.students.find({grade: {$nin: [6, 8]}})
+
+14) db.students.find({grade: {$not: {$gte: 7}}})
+
+15) db.students.find().sort({last_name: 1})
+
+16) db.students.find().sort({last_name: 1}).limit(3)
+
+17) db.students.find().sort({last_name: 1}).limit(1).skip(3)
+
+18) db.students.update({grade:5},{$set:{parents:{mother:'Hillary', father:'Bill'}}},{multi:true})
+    db.students.update({grade:{$ne: 5}},{$set:{parents:{mother:'Laura', father:'George'}}},{multi:true})
+
+19) db.students.find({'parents.father': 'Bill'})
