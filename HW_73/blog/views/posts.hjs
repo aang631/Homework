@@ -1,0 +1,21 @@
+{{#posts}}
+<div id="{{_id}}">
+    <h2>{{title}}</h2>
+    <h3>by {{author}} at {{date}}</h3>
+    <div>{{content}}</div>
+    <ol>
+    {{#comments}}
+        <div class="comment">
+            <li>
+                {{commenter}} says:
+                <div class="attribution">{{date}}</div>
+                <div>{{comment}}</div>
+            </li>
+        </div>    
+    {{/comments}}
+    </ol>
+    <br/>
+    <a href="/newComment?id={{_id}}" class='addCommentButton'>Add comment</a>
+    <hr/>
+</div>
+{{/posts}}

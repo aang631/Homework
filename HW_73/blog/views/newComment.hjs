@@ -1,0 +1,11 @@
+<form method="post">
+    <div>
+      Name:
+        <input type="text" name="commenter" placeholder="Enter Name" required/>
+    </div>
+    <div>
+       Comment:
+        <textarea name="comment" placeholder="Enter Comment" required></textarea>
+    </div>
+    <button>Submit</button>
+</form>
