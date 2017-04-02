@@ -1,8 +1,0 @@
-{{#comments}}
-    <div class="commentView">
-        <div class="comment">
-            <div>{{content}}</div>
-            <div class="attribution">Posted by {{author}} at {{date}}</div>
-        </div>
-    </div>
-{{/comments}}
