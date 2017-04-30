@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">מַחשְׁבוֹן תֶשֶׁר</string>
+    <string name="billAmount">חֶשְׁבּוֹן</string>
+    <string name="percentage">תֶשֶׁר פּרוֹצְנט</string>
+    <string name="calculate">לחשב</string>
+    <string name="result">טוֹטָלִי</string>
+</resources>
